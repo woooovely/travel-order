@@ -54,3 +54,5 @@ const SummaryPage = () => {
     </div>
   );
 };
+
+export default SummaryPage;
