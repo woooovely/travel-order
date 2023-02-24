@@ -12,7 +12,7 @@ interface OrderProps {
 const Type = ({ orderType }: OrderProps) => {
   const [items, setItems] = useState<string[] | number[]>([]);
   const [error, setError] = useState(false);
-  const [orderData, updateItemCount] = useContext(OrderContext);
+  const [orderData, updateItemCount] = useContext<any>(OrderContext);
 
   useEffect(() => {
     loadItems(orderType);
