@@ -9,8 +9,7 @@ interface ProductProps {
 
 const Products = ({ name, imagePath, updateItemCount }: ProductProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const currentValue = e.target.value;
-    updateItemCount(name, currentValue);
+    updateItemCount(name, e.target.value);
   };
 
   return (
