@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import styled from 'styled-components'
 import Type from "../../components/type";
 import { OrderContext } from "../../context";
+import { useNavigate } from "react-router-dom";
 
 const OrderPage = () => {
     const [orderData] = useContext<any>(OrderContext);
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -18,6 +20,7 @@ const OrderPage = () => {
                 </Options>
                 <Options>
                     <h2>총 합계: {orderData.totals.total}</h2>
+                    <button onClick={() => navigate("/check")}>주문하기</button>
                 </Options>
             </OptionContainer>
         </div>
