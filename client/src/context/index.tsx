@@ -9,7 +9,7 @@ interface stateType {
 }
 
 
-export const OrderContext = createContext(null);
+export const OrderContext = createContext([]);
 
 export function OrderContextProvider(props: any) {
     const [orderCounts, setOrderCounts] = useState<stateType>({
