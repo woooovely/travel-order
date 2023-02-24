@@ -11,7 +11,7 @@ interface OrderProps {
 
 const Type = ({ orderType }: OrderProps) => {
   const [items, setItems] = useState<string[] | number[]>([]);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState<boolean>(false);
   const [orderData, updateItemCount] = useContext<any>(OrderContext);
 
   useEffect(() => {
