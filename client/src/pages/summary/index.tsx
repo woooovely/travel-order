@@ -1,9 +1,11 @@
 import React, { useContext, useState } from "react";
 import { OrderContext } from "../../context";
+import { useNavigate } from 'react-router-dom';
 
 const SummaryPage = () => {
   const [checked, setChecked] = useState<boolean>(false);
   const [orderDetails] = useContext<any>(OrderContext);
+  const navigate = useNavigate();
 
   const productArray = Array.from(orderDetails.products);
   const productList = productArray.map(([key, value]: any) => (
@@ -28,6 +30,7 @@ const SummaryPage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    navigate("/complete")    
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
