@@ -2,11 +2,13 @@ import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { OrderContext } from "../../context";
+import { useNavigate } from 'react-router-dom';
 
 const CompletePage = () => {
   const [orderHistory, setOrderHistory] = useState([]);
   const [orderData] = useContext(OrderContext);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     orderCompleted(orderData);
@@ -46,6 +48,8 @@ const CompletePage = () => {
             {showOrder}
           </tbody>
         </Table>
+        <br />
+        <button onClick={() => navigate("/")}>처음으로</button>
       </Container>
     );
   }
