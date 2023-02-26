@@ -29,4 +29,12 @@ const CompletePage = () => {
         <td>{item.title}</td>
     </tr>
   ))
+
+  if (loading) {
+    return (
+        <h2>불러오는 중...</h2>
+    )
+  }
 };
+
+export default CompletePage;
