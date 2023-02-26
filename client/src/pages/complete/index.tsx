@@ -6,7 +6,7 @@ import { OrderContext } from "../../context";
 const CompletePage = () => {
   const [orderHistory, setOrderHistory] = useState([]);
   const [orderData] = useContext(OrderContext);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     orderCompleted(orderData);
@@ -15,26 +15,48 @@ const CompletePage = () => {
   const orderCompleted = async (orderData: any) => {
     try {
       const res = await axios.post("http://localhost:4000/order", orderData);
-      console.log('response', res);
+      console.log("response", res);
       setOrderHistory(res.data);
-      setLoading(true);
+      setLoading(false);
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
   };
 
   const showOrder = orderHistory.map((item: any, key: any) => (
     <tr key={item.orderNumber}>
-        <td>{item.orderNumber}</td>
-        <td>{item.title}</td>
+      <td>{item.orderNumber}</td>
+      <td>{item.price}</td>
     </tr>
-  ))
+  ));
 
   if (loading) {
+    return <h2>불러오는 중...</h2>;
+  } else {
     return (
-        <h2>불러오는 중...</h2>
-    )
+      <Container>
+        <h2>주문이 성공적으로 완료되었어요!</h2>
+        <h3>주문한 상품</h3>
+        <Table>
+          <tbody>
+            <tr>
+              <th>주문번호</th>
+              <th>가격</th>
+            </tr>
+            {showOrder}
+          </tbody>
+        </Table>
+      </Container>
+    );
   }
 };
 
 export default CompletePage;
+
+const Table = styled.table`
+  margin: auto;
+`;
+
+const Container = styled.div`
+  text-align: center;
+`;
