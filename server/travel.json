@@ -1,22 +1,22 @@
 {
     "countries": [
       {
-        "name": "America",
+        "name": "미국 워싱턴 D.C.",
         "imagePath": "/images/america.jpeg",
         "description": "Good America"
       },
       {
-        "name": "England",
+        "name": "영국 런던",
         "imagePath": "/images/england.jpeg",
         "description": "Good England"
       },
       {
-        "name": "Germany",
+        "name": "독일 도르트문트",
         "imagePath": "/images/germany.jpeg",
         "description": "Good Germany"
       },
       {
-        "name": "Portland",
+        "name": "포틀랜드 캐슬타운",
         "imagePath": "/images/portland.jpeg",
         "description": "Good Portland"
       }
