@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const MainPage = () => {
     return (
@@ -14,6 +14,16 @@ const MainPage = () => {
 
 export default MainPage;
 
+const easeIn = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+    }
+`
+
 const TopSpace = styled.div`
     height: 400px;
 `
@@ -24,4 +34,5 @@ const TextContainer = styled.div`
         font-size: 70px;
         font-weight: 600;
     }
+    animation: ${easeIn} 1s ease-in;
 `
