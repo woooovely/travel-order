@@ -12,6 +12,7 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
+        <Route path="/order" element={<OrderPage />}></Route>
         <Route path="/check" element={<SummaryPage />}></Route>
         <Route path="/complete" element={<CompletePage />}></Route>
       </Routes>
