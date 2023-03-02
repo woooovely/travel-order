@@ -1,9 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
+import useTitle from '../../hook/title';
 
 const MainPage = () => {
     const navigate = useNavigate();
+
+    const titleUpdater = useTitle("불러오는 중...")
+    setTimeout(() => titleUpdater("환영합니다!"))
 
     return (
         <>
