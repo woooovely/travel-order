@@ -46,9 +46,7 @@ const Type = ({ orderType }: OrderProps) => {
 
   return (
     <div>
-      <h2>주문 종류</h2>
-      <p>하나의 가격</p>
-      <p>총 가격 : {orderData.totals[orderType]}</p>
+      <h2>베스트 상품(옵션)</h2>
       <div
         style={{
           display: "flex",
