@@ -1,7 +1,10 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
+    const navigate = useNavigate();
+
     return (
         <>
           <TopSpace />
@@ -9,7 +12,7 @@ const MainPage = () => {
             <p>당신만의<br />특별한 여행을<br />주문하고 즐겨보세요</p>
           </TextContainer>
           <BtnContainer>
-            <MoveBtn>
+            <MoveBtn onClick={() => navigate("/order")}>
                 보러가기
             </MoveBtn>
           </BtnContainer>
