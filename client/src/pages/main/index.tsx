@@ -8,11 +8,39 @@ const MainPage = () => {
           <TextContainer>
             <p>당신만의<br />특별한 여행을<br />주문하고 즐겨보세요</p>
           </TextContainer>
+          <BtnContainer>
+            <MoveBtn>
+                보러가기
+            </MoveBtn>
+          </BtnContainer>
         </>
     )
 }
 
 export default MainPage;
+
+const MoveBtn = styled.button`
+    width: 192px;
+    height: 72px;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+    color: white;
+    transition: background-color 0.6s ease-in-out;
+    &:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        cursor: pointer;
+    }
+`
+
+const BtnContainer = styled.div`
+    width: 192px;
+    height: 72px;
+    margin: 0 auto;
+`
 
 const easeIn = keyframes`
     0% {
