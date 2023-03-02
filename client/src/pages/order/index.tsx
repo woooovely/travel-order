@@ -3,10 +3,14 @@ import styled from 'styled-components'
 import Type from "../../components/type";
 import { OrderContext } from "../../context";
 import { useNavigate } from "react-router-dom";
+import useTitle from '../../hook/title';
 
 const OrderPage = () => {
     const [orderData] = useContext<any>(OrderContext);
     const navigate = useNavigate();
+
+    const titleUpdater = useTitle('불러오는 중...')
+    setTimeout(() => titleUpdater('Travel Products'))
 
     return (
         <div>
