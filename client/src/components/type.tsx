@@ -4,6 +4,7 @@ import { OrderContext } from "../context";
 import ErrorBanner from "./error";
 import Options from "./options";
 import Products from "./product";
+import styled from 'styled-components';
 
 interface OrderProps {
   orderType: string;
@@ -28,7 +29,7 @@ const Type = ({ orderType }: OrderProps) => {
   };
 
   const ItemComponent = orderType === "products" ? Products : Options;
-
+ 
   const optionsItems = items.map((item: any) => (
     <ItemComponent
       key={item.name}
@@ -47,16 +48,14 @@ const Type = ({ orderType }: OrderProps) => {
   return (
     <div>
       <h2>베스트 상품(옵션)</h2>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: orderType === "options" ? "column" : "row",
-        }}
-      >
-        {optionsItems}
-      </div>
+      <Container>{optionsItems}</Container>
     </div>
   );
 };
 
 export default Type;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`
