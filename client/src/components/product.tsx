@@ -24,6 +24,7 @@ const Products = ({ name, imagePath, updateItemCount }: ProductProps) => {
           type="number"
           name="quantitiy"
           min="0"
+          max="50"
           defaultValue={0}
           onChange={handleChange}
         />
