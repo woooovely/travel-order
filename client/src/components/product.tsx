@@ -4,10 +4,11 @@ import styled from "styled-components";
 interface ProductProps {
   name: string;
   imagePath: string;
+  description: string
   updateItemCount: (name: string, currentValue: string) => any;
 }
 
-const Products = ({ name, imagePath, updateItemCount }: ProductProps) => {
+const Products = ({ name, imagePath, description , updateItemCount }: ProductProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     updateItemCount(name, e.target.value);
   };
@@ -28,6 +29,7 @@ const Products = ({ name, imagePath, updateItemCount }: ProductProps) => {
           defaultValue={0}
           onChange={handleChange}
         />
+        <p>{description}</p>
       </Form>
     </Container>
   );
