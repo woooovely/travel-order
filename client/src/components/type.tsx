@@ -35,6 +35,7 @@ const Type = ({ orderType }: OrderProps) => {
       key={item.name}
       name={item.name}
       imagePath={item.imagePath}
+      description={item.description}
       updateItemCount={(itemName: string, newItemCount: any) =>
         updateItemCount(itemName, newItemCount, orderType)
       }
