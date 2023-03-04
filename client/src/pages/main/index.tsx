@@ -16,7 +16,7 @@ const MainPage = () => {
             <p>당신만의<br />특별한 여행을<br />주문하고 즐겨보세요</p>
           </TextContainer>
           <BtnContainer>
-            <MoveBtn onClick={() => navigate("/order")}>
+            <MoveBtn onClick={() => navigate("/lists")}>
                 보러가기
             </MoveBtn>
           </BtnContainer>
