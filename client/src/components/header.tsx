@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -25,13 +26,14 @@ export default Header;
 
 const Categories = styled.li`
     margin-left: 20px;
+    font-size: 18px;
 `
 
 const CategoryContainer = styled.ul`
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -53px;
 `
 
 const LogoContainer = styled.div`
