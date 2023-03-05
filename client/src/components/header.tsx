@@ -16,10 +16,10 @@ const Header = () => {
                         <LinkStyle to="/">홈</LinkStyle>
                     </Categories>
                     <Categories>
-                        <Link to="/lists">상품 조회</Link>
+                        <LinkStyle to="/lists">상품 조회</LinkStyle>
                     </Categories>
                     <Categories>
-                        <Link to="/order">주문하기</Link>
+                        <LinkStyle to="/order">주문하기</LinkStyle>
                     </Categories>
                 </CategoryContainer>
             </div>
@@ -31,7 +31,8 @@ const Header = () => {
 export default Header;
 
 const LinkStyle = styled(Link)`
-    
+    color: black;
+    text-decoration: none;
 `
 
 const Categories = styled.li`
