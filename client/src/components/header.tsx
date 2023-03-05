@@ -24,7 +24,7 @@ const Header = () => {
 export default Header;
 
 const Categories = styled.li`
-    
+    margin-left: 20px;
 `
 
 const CategoryContainer = styled.ul`
