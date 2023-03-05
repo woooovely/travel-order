@@ -25,7 +25,7 @@ const Header = () => {
 export default Header;
 
 const Categories = styled.li`
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 18px;
 `
 
