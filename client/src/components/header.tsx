@@ -12,9 +12,15 @@ const Header = () => {
             </LogoContainer>
             <div>
                 <CategoryContainer>
-                    <Categories>홈</Categories>
-                    <Categories>상품 조회</Categories>
-                    <Categories>주문하기</Categories>
+                    <Categories>
+                        <LinkStyle to="/">홈</LinkStyle>
+                    </Categories>
+                    <Categories>
+                        <Link to="/lists">상품 조회</Link>
+                    </Categories>
+                    <Categories>
+                        <Link to="/order">주문하기</Link>
+                    </Categories>
                 </CategoryContainer>
             </div>
           </HeaderContainer>
@@ -23,6 +29,10 @@ const Header = () => {
 }
 
 export default Header;
+
+const LinkStyle = styled(Link)`
+    
+`
 
 const Categories = styled.li`
     margin-left: 50px;
