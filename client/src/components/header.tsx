@@ -38,6 +38,9 @@ const LinkStyle = styled(Link)`
 const Categories = styled.li`
     margin-left: 50px;
     font-size: 18px;
+    &:hover {
+        opacity: 0.6;
+    }
 `
 
 const CategoryContainer = styled.ul`
