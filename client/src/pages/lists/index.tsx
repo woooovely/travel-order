@@ -10,8 +10,15 @@ const ProductLists = () => {
     return (
         <div>
             <Header />
+            <ListsTitle>시선 집중</ListsTitle>
         </div>
     )
 }
 
 export default ProductLists;
+
+const ListsTitle = styled.p`
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 30px;
+`
