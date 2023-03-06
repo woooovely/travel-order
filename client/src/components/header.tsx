@@ -60,6 +60,7 @@ const LogoContainer = styled.div`
 const LogoText = styled.p`
   font-size: 25px;
   font-weight: 550;
+  cursor: pointer;
 `;
 
 const HeaderContainer = styled.header`
