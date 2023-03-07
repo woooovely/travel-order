@@ -13,7 +13,9 @@ const ShowProducts = ({ name, imagePath }: ShowProps) => {
         src={`http://localhost:4000/${imagePath}`}
         alt={`${name} 패키지`}
       />
-      <ProductName>{name}</ProductName>
+      <ProductName>
+        {name} <b style={{ color: "red" }}>7일</b>
+      </ProductName>
     </Container>
   );
 };
@@ -24,7 +26,7 @@ const ProductName = styled.p`
   padding-left: 45px;
   font-size: 18px;
   font-weight: 500;
-`
+`;
 
 const Container = styled.div`
   width: 380px;
@@ -32,8 +34,8 @@ const Container = styled.div`
   border: 1px solid black;
   margin-left: 30px;
   border-radius: 5px;
-  border: 1px solid #DEDEDE;
-`
+  border: 1px solid #dedede;
+`;
 
 const Images = styled.img`
   width: 75%;
