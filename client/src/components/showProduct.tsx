@@ -48,4 +48,8 @@ const Images = styled.img`
   width: 75%;
   padding-left: 45px;
   padding-top: 20px;
+  transition: width 0.7s ease-in-out;
+  &:hover {
+    width: 300px;
+  }
 `;
