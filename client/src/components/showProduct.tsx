@@ -8,18 +8,26 @@ interface ShowProps {
 
 const ShowProducts = ({ name, imagePath }: ShowProps) => {
   return (
-    <div>
+    <Container>
       <Images
         src={`http://localhost:4000/${imagePath}`}
         alt={`${name} 패키지`}
       />
       <p>{name}</p>
-    </div>
+    </Container>
   );
 };
 
 export default ShowProducts;
 
+const Container = styled.div`
+  width: 380px;
+  height: 367px;
+  border: 1px solid black;
+  margin-left: 30px;
+`
+
 const Images = styled.img`
   width: 75%;
+  padding-left: 45px;
 `;
