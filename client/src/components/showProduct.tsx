@@ -52,4 +52,5 @@ const Images = styled.img`
   &:hover {
     width: 300px;
   }
+  cursor: pointer;
 `;
