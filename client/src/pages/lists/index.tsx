@@ -4,7 +4,6 @@ import Header from "../../components/header";
 import useTitle from "../../hook/title";
 import axios from "axios";
 import ShowProducts from "../../components/showProduct";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 const ProductLists = () => {
   const titleUpdater = useTitle("불러오는 중...");
@@ -34,6 +33,12 @@ const ProductLists = () => {
       description={item.description}
     />
   ));
+
+  if (error) {
+    return (
+        <div>에러가 발생하였습니다.</div>
+    )
+  }
 
   return (
     <div>
