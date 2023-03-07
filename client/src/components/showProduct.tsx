@@ -16,11 +16,18 @@ const ShowProducts = ({ name, imagePath }: ShowProps) => {
       <ProductName>
         {name} <b style={{ color: "red" }}>7일</b>
       </ProductName>
+      <Price>3,870,000 <span style={{ fontSize: '18px' }}>원</span></Price>
     </Container>
   );
 };
 
 export default ShowProducts;
+
+const Price = styled.p`
+    font-size: 30px;
+    padding-left: 45px;
+    font-weight: 600;
+`
 
 const ProductName = styled.p`
   padding-left: 45px;
