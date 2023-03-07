@@ -4,7 +4,6 @@ import Header from "../../components/header";
 import useTitle from "../../hook/title";
 import axios from "axios";
 import ShowProducts from "../../components/showProduct";
-
 const ProductLists = () => {
   const titleUpdater = useTitle("불러오는 중...");
   setTimeout(() => titleUpdater("상품 조회 | Your Travels"));
@@ -30,7 +29,6 @@ const ProductLists = () => {
       key={item.name}
       name={item.name}
       imagePath={item.imagePath}
-      description={item.description}
     />
   ));
 
@@ -44,12 +42,17 @@ const ProductLists = () => {
     <div>
       <Header />
       <ListsTitle>시선 집중</ListsTitle>
-      <div>{products}</div>
+      <Container>{products}</Container>
     </div>
   );
 };
 
 export default ProductLists;
+
+const Container = styled.div`
+    display: flex;
+    margin-left: 30px;
+`
 
 const ListsTitle = styled.p`
   font-size: 30px;
