@@ -13,21 +13,28 @@ const ShowProducts = ({ name, imagePath }: ShowProps) => {
         src={`http://localhost:4000/${imagePath}`}
         alt={`${name} 패키지`}
       />
-      <p>{name}</p>
+      <ProductName>{name}</ProductName>
     </Container>
   );
 };
 
 export default ShowProducts;
 
+const ProductName = styled.p`
+  padding-left: 45px;
+`
+
 const Container = styled.div`
   width: 380px;
   height: 367px;
   border: 1px solid black;
   margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #DEDEDE;
 `
 
 const Images = styled.img`
   width: 75%;
   padding-left: 45px;
+  padding-top: 20px;
 `;
