@@ -4,17 +4,16 @@ import styled from "styled-components";
 interface ShowProps {
   name: string;
   imagePath: string;
-  description: string;
 }
 
-const ShowProducts = ({ name, imagePath, description }: ShowProps) => {
+const ShowProducts = ({ name, imagePath }: ShowProps) => {
   return (
     <div>
       <Images
         src={`http://localhost:4000/${imagePath}`}
         alt={`${name} 패키지`}
       />
-      <p>{description}</p>
+      <p>{name}</p>
     </div>
   );
 };
