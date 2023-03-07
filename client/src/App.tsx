@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import { Route } from "react-router-dom";
+import AboutCastleTown from "./pages/about/castle";
 import AboutDortmund from "./pages/about/dortmund";
 import AboutLondon from "./pages/about/london";
 import AboutWashington from "./pages/about/washington";
@@ -28,6 +29,10 @@ const App: React.FC = () => {
         <Route
           path="/about/germany-dortmund"
           element={<AboutDortmund />}
+        ></Route>
+        <Route
+          path="/about/portland-castletown"
+          element={<AboutCastleTown />}
         ></Route>
       </Routes>
     </BrowserRouter>
