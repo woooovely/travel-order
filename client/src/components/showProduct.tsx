@@ -22,6 +22,8 @@ export default ShowProducts;
 
 const ProductName = styled.p`
   padding-left: 45px;
+  font-size: 18px;
+  font-weight: 500;
 `
 
 const Container = styled.div`
