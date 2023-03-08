@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
+import { ShowProps } from '../types/show';
 
-interface ShowProps {
-  name: string;
-  imagePath: string;
-}
+const ShowProducts = ({ name, imagePath, url }: ShowProps) => {
+  const navigate = useNavigate();
 
-const ShowProducts = ({ name, imagePath }: ShowProps) => {
   return (
     <Container>
       <Images
         src={`http://localhost:4000/${imagePath}`}
         alt={`${name} 패키지`}
+        onClick={() => navigate(`/about/${url}`)}
       />
       <ProductName>
         {name} <b style={{ color: "red" }}>7일</b>
