@@ -8,10 +8,11 @@ import ShowProducts from "../../components/showProduct";
 
 const ProductLists = () => {
   const titleUpdater = useTitle("불러오는 중...");
-  setTimeout(() => titleUpdater("상품 조회 | Your Travels"));
+  setTimeout(() => titleUpdater("시선 집중🔥 | Your Travels"));
 
   const [items, setItems] = useState<string[] | number[]>([]);
   const [error, setError] = useState<boolean>(false);
+  
 
   useEffect(() => {
     loadItems();
@@ -31,6 +32,7 @@ const ProductLists = () => {
       key={item.name}
       name={item.name}
       imagePath={item.imagePath}
+      url={item.url}
     />
   ));
 
