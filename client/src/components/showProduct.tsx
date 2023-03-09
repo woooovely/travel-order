@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from 'react-router-dom';
-import { ShowProps } from '../types/show';
+import { useNavigate } from "react-router-dom";
+import { ShowProps } from "../types/show";
 
 const ShowProducts = ({ name, imagePath, url }: ShowProps) => {
   const navigate = useNavigate();
@@ -16,7 +16,9 @@ const ShowProducts = ({ name, imagePath, url }: ShowProps) => {
       <ProductName>
         {name} <b style={{ color: "red" }}>7일</b>
       </ProductName>
-      <Price>3,870,000 <span style={{ fontSize: '18px' }}>원</span></Price>
+      <Price>
+        3,870,000 <span style={{ fontSize: "18px" }}>원</span>
+      </Price>
     </Container>
   );
 };
@@ -24,10 +26,10 @@ const ShowProducts = ({ name, imagePath, url }: ShowProps) => {
 export default ShowProducts;
 
 const Price = styled.p`
-    font-size: 30px;
-    padding-left: 45px;
-    font-weight: 600;
-`
+  font-size: 30px;
+  padding-left: 45px;
+  font-weight: 600;
+`;
 
 const ProductName = styled.p`
   padding-left: 45px;
