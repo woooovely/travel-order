@@ -37,7 +37,7 @@ const MoveBtn = styled.button`
     transition: background-color 0.6s ease-in-out;
     &:hover {
         background-color: white;
-        border: 1px solid black;
+        border: 2px solid black;
         color: black;
         cursor: pointer;
     }
