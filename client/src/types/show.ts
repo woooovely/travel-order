@@ -3,3 +3,7 @@ export interface ShowProps {
     imagePath: string
     url: string
 }
+
+export interface ImageProps {
+    imagePath: string
+}
