@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import Header from '../../components/header';
+import useTitle from '../../hook/title';
 
 const AboutWashington = () => {
+    const titleUpdater = useTitle('불러오는 중...')
+    setTimeout(() => titleUpdater('미국 워싱턴 D.C. 7일 | Your Travels'))
+
     return (
         <>
           <Header />
