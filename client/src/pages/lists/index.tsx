@@ -4,28 +4,33 @@ import Header from "../../components/header";
 import useTitle from "../../hook/title";
 import axios from "axios";
 import ShowProducts from "../../components/showProduct";
-
+import { useQuery } from "react-query";
 
 const ProductLists = () => {
   const titleUpdater = useTitle("불러오는 중...");
   setTimeout(() => titleUpdater("시선 집중🔥 | Your Travels"));
 
-  const [items, setItems] = useState<string[] | number[]>([]);
-  const [error, setError] = useState<boolean>(false);
-  
+  const [items, setItems] = useState<string[]>([]);
 
-  useEffect(() => {
-    loadItems();
-  });
+  const useLoadItems = () => {
+    const { isLoading, isError, error }: any = useQuery(
+      "load-items",
+      async () => {
+        const response = await axios.get("http://localhost:4000/products");
+        setItems(response.data);
+      }
+    );
 
-  const loadItems = async () => {
-    try {
-      const response = await axios.get("http://localhost:4000/products");
-      setItems(response.data);
-    } catch (error: any) {
-      setError(error);
+    if (isError) {
+      return <div>{error.message}</div>;
+    }
+
+    if (isLoading) {
+      return <h2>로딩중...</h2>;
     }
   };
+
+  useLoadItems();
 
   const products = items.map((item: any) => (
     <ShowProducts
@@ -36,11 +41,6 @@ const ProductLists = () => {
     />
   ));
 
-  if (error) {
-    return (
-        <h2>에러가 발생하였습니다!</h2>
-    )
-  }
 
   return (
     <div>
@@ -54,8 +54,8 @@ const ProductLists = () => {
 export default ProductLists;
 
 const Container = styled.div`
-    display: flex;
-`
+  display: flex;
+`;
 
 const ListsTitle = styled.p`
   font-size: 30px;
