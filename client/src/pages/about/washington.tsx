@@ -49,12 +49,17 @@ const AboutWashington = () => {
           많은 연방 정부의 주요 관청이 있으며 174개 국가의 대사관과 국제통화기금
           본부 등 각종 국제기구의 본부가 있는 국제 정치와 외교의 중심지이다.
         </Description>
+        <Space />
       </ProductContainer>
     </>
   );
 };
 
 export default AboutWashington;
+
+const Space = styled.div`
+  height: 120px;
+`
 
 const Description = styled.div`
   width: 500px;
