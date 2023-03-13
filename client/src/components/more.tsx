@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useQuery } from "react-query";
 import axios from "axios";
+import ShowProducts from "./showProduct";
 
 const fetchImages = () => {
   return axios.get("http://localhost:4000/products");
@@ -13,20 +14,25 @@ const MoreProducts = () => {
   );
 
   if (isLoading) {
-    return <h2>로딩중...</h2>
+    return <h2>로딩중...</h2>;
   }
 
   if (isError) {
-    return <h2>{error.message}</h2>
+    return <h2>{error.message}</h2>;
   }
 
   return (
     <div>
-        {data?.data.map((items: any) => (
-            
-        ))}
+      {data?.data.map((items: any) => (
+        <ShowProducts
+          key={items.name}
+          name={items.name}
+          imagePath={items.imagePath}
+          url={items.url}
+        />
+      ))}
     </div>
-  )
+  );
 };
 
 export default MoreProducts;
