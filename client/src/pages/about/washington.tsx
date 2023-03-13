@@ -59,6 +59,7 @@ export default AboutWashington;
 const Description = styled.div`
   width: 500px;
   margin-left: 210px;
+  font-size: 19px;
 `;
 
 const DetailTitle = styled.p`
