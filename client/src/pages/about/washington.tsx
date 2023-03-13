@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import useTitle from "../../hook/title";
 import { useQuery } from "react-query";
 import axios from "axios";
+import MoreProducts from '../../components/more';
 
 const AboutWashington = () => {
   const titleUpdater = useTitle("불러오는 중...");
@@ -50,6 +51,7 @@ const AboutWashington = () => {
           본부 등 각종 국제기구의 본부가 있는 국제 정치와 외교의 중심지이다.
         </Description>
         <Space />
+        <MoreProducts />
       </ProductContainer>
     </>
   );
