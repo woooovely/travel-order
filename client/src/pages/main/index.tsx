@@ -39,6 +39,7 @@ const MoveBtn = styled.button`
         background-color: white;
         border: 2px solid black;
         color: black;
+        font-weight: 600;
         cursor: pointer;
     }
 `
