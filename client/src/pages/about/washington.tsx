@@ -74,7 +74,7 @@ const DetailTitle = styled.p`
   font-weight: 600;
 `;
 
-export const MidSpace = styled.div`
+const MidSpace = styled.div`
   height: 50px;
 `;
 
