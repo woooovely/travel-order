@@ -1,5 +1,5 @@
 import Header from '../../components/header';
-import { ProductContainer, ProductTitle } from './washington';
+import styled from 'styled-components';
 
 const AboutLondon = () => {
     return (
@@ -7,9 +7,65 @@ const AboutLondon = () => {
           <Header />
           <ProductContainer>
             <ProductTitle>영국 | 런던 패키지</ProductTitle>
+            <ProductDetail>
+                <Details>글로벌 도시</Details>
+                <Details>인기 상품</Details>
+                <Details>북런던</Details>
+            </ProductDetail>
           </ProductContainer>
         </>
     )
 }
 
 export default AboutLondon;
+
+const Space = styled.div`
+  height: 120px;
+`
+
+const Description = styled.div`
+  width: 500px;
+  margin-left: 210px;
+  font-size: 19px;
+`;
+
+const DetailTitle = styled.p`
+  font-size: 23px;
+  margin-right: 240px;
+  font-weight: 600;
+`;
+
+export const MidSpace = styled.div`
+  height: 50px;
+`;
+
+const Images = styled.img`
+  width: 70%;
+  display: flex;
+  padding-left: 400px;
+`;
+
+const Details = styled.li`
+  margin-left: 20px;
+`;
+
+const ProductDetail = styled.p`
+  display: flex;
+  list-style: none;
+  padding-right: 15px;
+`;
+
+const ProductContainer = styled.div`
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+`;
+
+const ProductTitle = styled.p`
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+`;
