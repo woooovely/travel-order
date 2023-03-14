@@ -1,7 +1,11 @@
 import Header from '../../components/header';
 import styled from 'styled-components';
+import useTitle from '../../hook/title';
 
 const AboutLondon = () => {
+  const titleUpdater = useTitle('불러오는 중...')
+  setTimeout(() => titleUpdater('영국 런던 7일 | Your Travels'));
+
     return (
         <>
           <Header />
