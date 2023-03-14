@@ -58,17 +58,17 @@ const AboutWashington = () => {
 export default AboutWashington;
 
 
-export const Space = styled.div`
+const Space = styled.div`
   height: 120px;
 `
 
-export const Description = styled.div`
+const Description = styled.div`
   width: 500px;
   margin-left: 210px;
   font-size: 19px;
 `;
 
-export const DetailTitle = styled.p`
+const DetailTitle = styled.p`
   font-size: 23px;
   margin-right: 240px;
   font-weight: 600;
@@ -78,23 +78,23 @@ export const MidSpace = styled.div`
   height: 50px;
 `;
 
-export const Images = styled.img`
+const Images = styled.img`
   width: 70%;
   display: flex;
   padding-left: 400px;
 `;
 
-export const Details = styled.li`
+const Details = styled.li`
   margin-left: 20px;
 `;
 
-export const ProductDetail = styled.p`
+const ProductDetail = styled.p`
   display: flex;
   list-style: none;
   padding-right: 15px;
 `;
 
-export const ProductContainer = styled.div`
+const ProductContainer = styled.div`
   width: 1000px;
   display: flex;
   justify-content: center;
@@ -103,7 +103,7 @@ export const ProductContainer = styled.div`
   flex-direction: column;
 `;
 
-export const ProductTitle = styled.p`
+const ProductTitle = styled.p`
   font-size: 25px;
   font-weight: 600;
   margin: 0;
