@@ -53,6 +53,7 @@ const ProductDetail = styled.p`
   display: flex;
   list-style: none;
   padding-right: 15px;
+  margin-left: 40px;
 `;
 
 const ProductContainer = styled.div`
