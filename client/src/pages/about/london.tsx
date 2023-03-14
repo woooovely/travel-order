@@ -12,6 +12,7 @@ const AboutLondon = () => {
                 <Details>인기 상품</Details>
                 <Details>북런던</Details>
             </ProductDetail>
+            <Images src="http://localhost:4000/images/england.jpeg" />
           </ProductContainer>
         </>
     )
