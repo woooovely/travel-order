@@ -18,6 +18,8 @@ const AboutLondon = () => {
             </ProductDetail>
             <Images src="http://localhost:4000/images/england.jpeg" />
             <MidSpace />
+            <DetailTitle>설명</DetailTitle>
+            
           </ProductContainer>
         </>
     )
