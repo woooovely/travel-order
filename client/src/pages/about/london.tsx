@@ -19,7 +19,7 @@ const AboutLondon = () => {
             <Images src="http://localhost:4000/images/england.jpeg" />
             <MidSpace />
             <DetailTitle>설명</DetailTitle>
-            
+
           </ProductContainer>
         </>
     )
@@ -39,7 +39,7 @@ const Description = styled.div`
 
 const DetailTitle = styled.p`
   font-size: 23px;
-  margin-right: 240px;
+  margin-right: 170px;
   font-weight: 600;
 `;
 
