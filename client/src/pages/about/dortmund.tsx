@@ -15,6 +15,10 @@ const AboutDortmund = () => {
         <Images src="http://localhost:4000/images/germany.jpeg" />
         <MidSpace />
         <DetailTitle>설명</DetailTitle>
+        <Description>
+          독일 노르트라인베스트팔렌주에 위치한 도시. 루르 공업지역에서도 가장
+          핵심적인 역할을 담당하는 곳으로, 현재 독일 내에서 9번째로 큰 도시이다.
+        </Description>
       </ProductContainer>
     </>
   );
