@@ -13,6 +13,8 @@ const AboutDortmund = () => {
           <Details>대도시권</Details>
         </ProductDetail>
         <Images src="http://localhost:4000/images/germany.jpeg" />
+        <MidSpace />
+        <DetailTitle>설명</DetailTitle>
       </ProductContainer>
     </>
   );
