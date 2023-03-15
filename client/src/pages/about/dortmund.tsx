@@ -32,7 +32,7 @@ const Space = styled.div`
 
 const Description = styled.div`
   width: 500px;
-  margin-left: 210px;
+  margin-left: 220px;
   font-size: 19px;
 `;
 
