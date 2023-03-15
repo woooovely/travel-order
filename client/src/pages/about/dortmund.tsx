@@ -6,7 +6,14 @@ const AboutDortmund = () => {
     <>
       <Header />
       <ProductContainer>
-        <ProductContainer>독일 | 도르트문트 패키지</ProductContainer>   
+        <ProductContainer>
+          <ProductTitle>독일 | 도르트문트 패키지</ProductTitle>
+          <ProductDetail>
+            <Details>맥주 산업</Details>
+            <Details>지리적 중심부</Details>
+            <Details>대도시권</Details>
+          </ProductDetail>
+        </ProductContainer>
       </ProductContainer>
     </>
   );
