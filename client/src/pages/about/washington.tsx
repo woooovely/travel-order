@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Header from "../../components/header";
 import useTitle from "../../hook/title";
 
-
 const AboutWashington = () => {
   const titleUpdater = useTitle("불러오는 중...");
   setTimeout(() => titleUpdater("미국 워싱턴 D.C. 7일 | Your Travels"));
@@ -17,7 +16,10 @@ const AboutWashington = () => {
           <Details>독립 행정구</Details>
           <Details>인기 상품</Details>
         </ProductDetail>
-        <Images src="http://localhost:4000/images/america.jpeg" />
+        <Images
+          src="http://localhost:4000/images/america.jpeg"
+          alt="상품 이미지"
+        />
         <MidSpace />
         <DetailTitle>설명</DetailTitle>
         <Description>
@@ -33,10 +35,9 @@ const AboutWashington = () => {
 
 export default AboutWashington;
 
-
 const Space = styled.div`
   height: 120px;
-`
+`;
 
 const Description = styled.div`
   width: 500px;
