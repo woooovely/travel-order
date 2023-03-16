@@ -12,7 +12,10 @@ const AboutDortmund = () => {
           <Details>지리적 중심부</Details>
           <Details>대도시권</Details>
         </ProductDetail>
-        <Images src="http://localhost:4000/images/germany.jpeg" />
+        <Images
+          src="http://localhost:4000/images/germany.jpeg"
+          alt="상품 이미지"
+        />
         <MidSpace />
         <DetailTitle>설명</DetailTitle>
         <Description>
