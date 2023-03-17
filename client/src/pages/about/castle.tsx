@@ -52,7 +52,7 @@ const Details = styled.li`
 const ProductDetail = styled.p`
   display: flex;
   list-style: none;
-  padding-right: 15px;
+  padding-right: 93px;
 `;
 
 const ProductContainer = styled.div`
