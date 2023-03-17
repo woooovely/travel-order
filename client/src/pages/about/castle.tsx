@@ -46,7 +46,7 @@ const MidSpace = styled.div`
 const Images = styled.img`
   width: 70%;
   display: flex;
-  padding-left: 400px;
+  padding-left: 420px;
 `;
 
 const Details = styled.li`
