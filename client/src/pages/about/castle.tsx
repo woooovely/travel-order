@@ -16,6 +16,7 @@ const AboutCastleTown = () => {
           src="http://localhost:4000/images/portland.jpeg"
           alt="상품 이미지"
         />
+        <MidSpace />
       </ProductContainer>
     </>
   );
