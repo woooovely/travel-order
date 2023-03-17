@@ -1,21 +1,25 @@
-import styled from 'styled-components';
-import Header from '../../components/header';
+import styled from "styled-components";
+import Header from "../../components/header";
 
 const AboutCastleTown = () => {
-    return (
-        <>
-          <Header />
-          <ProductContainer>
-            <ProductTitle>포틀랜드 | 캐슬타운 패키지</ProductTitle>
-            <ProductDetail>
-                <Details>영국</Details>
-                <Details>서유럽</Details>
-                <Details>소규모 지역</Details>
-            </ProductDetail>
-          </ProductContainer>
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <ProductContainer>
+        <ProductTitle>포틀랜드 | 캐슬타운 패키지</ProductTitle>
+        <ProductDetail>
+          <Details>영국</Details>
+          <Details>서유럽</Details>
+          <Details>소규모 지역</Details>
+        </ProductDetail>
+        <Images
+          src="http://localhost:4000/images/portland.jpeg"
+          alt="상품 이미지"
+        />
+      </ProductContainer>
+    </>
+  );
+};
 
 export default AboutCastleTown;
 
@@ -69,5 +73,3 @@ const ProductTitle = styled.p`
   font-weight: 600;
   margin: 0;
 `;
-
-
