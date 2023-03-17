@@ -7,6 +7,11 @@ const AboutCastleTown = () => {
           <Header />
           <ProductContainer>
             <ProductTitle>포틀랜드 | 캐슬타운 패키지</ProductTitle>
+            <ProductDetail>
+                <Details>영국</Details>
+                <Details>서유럽</Details>
+                <Details>소규모 지역</Details>
+            </ProductDetail>
           </ProductContainer>
         </>
     )
