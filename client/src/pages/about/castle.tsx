@@ -17,6 +17,7 @@ const AboutCastleTown = () => {
           alt="상품 이미지"
         />
         <MidSpace />
+        <DetailTitle>설명</DetailTitle>
       </ProductContainer>
     </>
   );
