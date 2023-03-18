@@ -23,6 +23,7 @@ const AboutCastleTown = () => {
           시애틀과 더불어 태평양에 가까운 미국의 도시다. 순수 포틀랜드 시의
           인구는 약 65만 명이며, 광역권으로는 약 250만의 대도시.
         </Description>
+        <Space />
       </ProductContainer>
     </>
   );
